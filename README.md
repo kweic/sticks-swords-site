@@ -1,3 +1,12 @@
+# Promotional site for Sticks & Swords
+
+Site deploys via Netlify here: https://sticks-swords.netlify.app/
+
+Game available on the Play store here: https://play.google.com/store/apps/details?id=com.kweic.battlesim
+
+<details>
+<summary>Create React App</summary>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +77,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</details>
