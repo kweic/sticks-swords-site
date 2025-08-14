@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 import icon from "./images/sticks_swords_icon_512.png";
 import heroWide from "./images/sticks_swords_titleimage_v2.png";
-import appStoreBadge from "./images/appstore_badge.png";
+// import appStoreBadge from "./images/appstore_badge.png";
 import googlePlayBadge from "./images/google_play_badge.png";
 
 import screen1 from "./images/screens/screen1.png";
