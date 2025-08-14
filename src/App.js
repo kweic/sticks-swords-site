@@ -37,27 +37,27 @@ export default function App() {
         * { box-sizing: border-box; }
         html, body, #root { height: 100%; }
         body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans"; background: radial-gradient(1200px 800px at 80% -10%, #1a2133 0%, transparent 50%), radial-gradient(800px 600px at -10% 10%, #161b2a 0%, transparent 60%), var(--bg); color: var(--text); }
-        .container { width: min(1100px, 92vw); margin: 0 auto; padding: 24px 0 64px; }
-        header { display:flex; align-items:center; gap:16px; padding:16px; border-radius: 6px; background:linear-gradient(180deg, var(--panel), var(--panel-2)); box-shadow:var(--shadow); border:2px solid #9fb1d1; position:sticky; top:16px; z-index:50; backdrop-filter: blur(6px); }
-        header img.icon { width:56px; height:56px; border-radius:3px; box-shadow:0 6px 20px #0008; }
+        .container { width: min(1100px, 92vw); margin: 0 auto; padding: 12px 0 64px; }
+        header { display:flex; align-items:center; gap:16px; padding:12px; border-radius: 6px; background:linear-gradient(180deg, var(--panel), var(--panel-2)); box-shadow:var(--shadow); border:2px solid #9fb1d1; backdrop-filter: blur(6px); }
+        header img.icon { width:128px; height:128px; border-radius:3px; box-shadow:0 6px 20px #0008; }
         header h1 { margin:0; font-size:24px; letter-spacing:.5px; }
         header .spacer { flex:1; }
-        .store-links { display:flex; gap:12px; align-items:center; }
+        .store-links { display:flex; gap:12px; }
         .store-links img { height:40px; border-radius:4px; box-shadow: var(--shadow); }
-        .hero { display:grid; grid-template-columns: 1.2fr 1fr; gap:28px; align-items:center; margin-top:28px; }
+        .hero { display:grid; grid-template-columns: 1.2fr 1.5fr; gap:28px; align-items:center; margin-top:12px; }
         @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } }
-        .hero-card { background: linear-gradient(180deg, var(--panel), var(--panel-2)); border:2px solid #9fb1d1; border-radius: 6px; box-shadow:var(--shadow); padding:28px; }
+        .hero-card { background: linear-gradient(180deg, var(--panel), var(--panel-2)); border:2px solid #9fb1d1; border-radius: 6px; box-shadow:var(--shadow); padding:24px; }
         .hero-title { font-size: clamp(28px, 3.2vw, 44px); line-height:1.08; margin:0 0 12px; }
-        .hero-sub { font-size:16px; margin:0 0 24px; }
+        .hero-sub { font-size:16px; margin:0 0 12px; }
         .cta { display:inline-flex; align-items:center; gap:10px; padding:12px 18px; border-radius:3px; border:1px solid var(--ring); background:linear-gradient(135deg, var(--brand), var(--brand-2)); color:#0a0d14; font-weight:700; text-decoration:none; letter-spacing:.3px; box-shadow:0 12px 30px rgba(110,168,255,.35); transition: transform .06s ease, box-shadow .2s ease; }
         .cta:hover { transform: translateY(-1px); box-shadow:0 16px 40px rgba(110,168,255,.45); }
         .device-frame { border-radius: 6px; overflow: clip; border:2px solid #9fb1d1; position:relative; background:#000; box-shadow:0 30px 60px rgba(0,0,0,.5); }
         .device-frame img { display:block; width:100%; height:auto; object-fit:cover; }
-        .features { display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; margin-top:28px; }
-        @media (max-width: 900px) { .features { grid-template-columns: 1fr; } }
-        .feature { background: linear-gradient(180deg, var(--panel), var(--panel-2)); border:2px solid #9fb1d1; border-radius: 6px; padding:18px; }
+        .features { display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; margin-top:24px; }
+        @media (max-width: 900px) { .features { grid-template-columns: 1.5fr; } }
+        .feature { background: linear-gradient(180deg, var(--panel), var(--panel-2)); border:2px solid #9fb1d1; border-radius: 6px; padding:12px; }
         .feature strong { color:var(--text); font-weight:700; }
-        .screenshots { margin-top:40px; position:relative; background: linear-gradient(180deg, #263540, #4d6a80); border:2px solid #9fb1d1; border-radius: 6px; padding:18px 18px 26px; box-shadow:var(--shadow); }
+        .screenshots { margin-top:12px; position:relative; background: linear-gradient(180deg, #263540, #4d6a80); border:2px solid #9fb1d1; border-radius: 6px; padding:18px 18px 26px; box-shadow:var(--shadow); }
         .rail { display:grid; grid-auto-flow:column; grid-auto-columns: clamp(240px, 26vw, 360px); gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; scroll-padding:12px; padding-bottom:10px; scrollbar-width:thin; }
         .shot { scroll-snap-align:start; border-radius:3px; overflow:hidden; border:1px solid #ffffff16; background:#000; }
         .shot img { display:block; width:100%; height:100%; object-fit:cover; }
@@ -77,7 +77,7 @@ export default function App() {
         <img className="icon" src={icon} alt="Game icon" />
         <div>
           <h1>Sticks & Swords</h1>
-          <div style={{ fontSize: 14, color: "var(--muted)" }}>Level up, find loot, equip your team.</div>
+          <div style={{ fontSize: 14 }}>Level up, find loot, equip your team.</div>
         </div>
         <div className="spacer" />
         <div className="store-links">
